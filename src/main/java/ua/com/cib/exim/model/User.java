@@ -27,7 +27,6 @@ public class User {
     public User(String login, String decrypt) {
         this.login = login;
         this.decrypt = decrypt;
-        this.encrypt = Utils.encryptor(decrypt);
     }
 
     public int getId() {

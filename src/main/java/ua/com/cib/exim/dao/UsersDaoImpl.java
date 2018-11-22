@@ -5,6 +5,7 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import ua.com.cib.exim.model.User;
+import ua.com.cib.exim.utils.Utils;
 
 import java.io.Serializable;
 import java.util.List;
@@ -17,6 +18,7 @@ public class UsersDaoImpl implements UsersDao{
     @Transactional
     @Override
     public int add(User user) {
+        user.setEncrypt(Utils.encryptor(user.getDecrypt()));
         Session session = sessionFactory.openSession();
         Serializable id = session.save(user);
         session.close();
