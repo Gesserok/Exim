@@ -1,8 +1,0 @@
-ua\com\cib\exim\controllers\MainController.class
-ua\com\cib\exim\dao\UsersDaoImpl.class
-ua\com\cib\exim\utils\Utils.class
-ua\com\cib\exim\dao\UsersDao.class
-ua\com\cib\exim\model\User.class
-ua\com\cib\exim\controllers\DispatcherController.class
-ua\com\cib\exim\services\UserService.class
-ua\com\cib\exim\services\UserServiceImpl.class
