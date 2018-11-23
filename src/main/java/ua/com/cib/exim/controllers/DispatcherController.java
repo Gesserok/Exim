@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class DispatcherController {
     @RequestMapping(value = "/", method= RequestMethod.GET)
     public String indexPage(){
-        return "index";
+        return "redirect:list";
     }
 
 }

@@ -8,7 +8,7 @@
     <meta http-equiv="content-type" content="text/html" charset="utf-8">
 </head>
 <body>
-<form:form id="formCreate" modelAttribute="newUser" method="post" action="submit">
+<form:form id="addForm" modelAttribute="newUser" method="post" action="submitNew">
     Enter Email address
     <form:input path="login"/>
     Enter Email password

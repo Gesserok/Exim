@@ -8,11 +8,12 @@
     <meta http-equiv="content-type" content="text/html" charset="utf-8">
 </head>
 <body>
-<form:form id="formCreate" modelAttribute="newUser" method="post" action="submit">
+<form:form id="updateForm" modelAttribute="updateUser" method="post" action="submitUpdate">
     Enter Email address
     <form:input path="login"/>
     Enter Email password
     <form:password path="decrypt" title="password"/>
+    <form:hidden path="id"/>
     <form:button value="submit">Save</form:button>
 </form:form>
 

@@ -11,7 +11,7 @@ public class UserServiceImpl implements UserService{
     @Autowired
     private UsersDao dao;
 
-    public int add(User user) {
+    public String add(User user) {
         return dao.add(user);
     }
 
@@ -19,12 +19,12 @@ public class UserServiceImpl implements UserService{
         return dao.update(user);
     }
 
-    public int delete(int id) {
-        return dao.delete(id);
+    public int delete(String login) {
+        return dao.delete(login);
     }
 
-    public User get(int id) {
-        return dao.get(id);
+    public User get(String login) {
+        return dao.get(login);
     }
 
     public List<User> list() {

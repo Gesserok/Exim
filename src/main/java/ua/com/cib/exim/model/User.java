@@ -10,11 +10,12 @@ import java.util.Objects;
 @Table (name = "users")
 public class User {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    private int id;
 
-    @Column(name = "login", unique = true, nullable = false)
+    @Id
+    @Column(name = "login", unique = true, nullable = false,columnDefinition="VARCHAR(45)")
     private String login;
     @Column(name = "encrypt", nullable = false, columnDefinition = "")
     private String encrypt;
@@ -29,13 +30,13 @@ public class User {
         this.decrypt = decrypt;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
+//    public int getId() {
+//        return id;
+//    }
+//
+//    public void setId(int id) {
+//        this.id = id;
+//    }
 
     public String getLogin() {
         return login;
@@ -64,7 +65,7 @@ public class User {
     @Override
     public String toString() {
         return "User{" +
-                "id=" + id +
+//                "id=" + id +
                 ", login='" + login + '\'' +
                 ", encrypt='" + encrypt + '\'' +
                 ", decrypt='" + decrypt + '\'' +
@@ -76,7 +77,7 @@ public class User {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         User user = (User) o;
-        return getId() == user.getId() &&
+        return //getId() == user.getId() &&
                 Objects.equals(getLogin(), user.getLogin()) &&
                 Objects.equals(getEncrypt(), user.getEncrypt()) &&
                 Objects.equals(getDecrypt(), user.getDecrypt());
@@ -84,6 +85,6 @@ public class User {
 
     @Override
     public int hashCode() {
-        return Objects.hash(getId(), getLogin(), getEncrypt(), getDecrypt());
+        return Objects.hash(/*getId(),*/ getLogin(), getEncrypt(), getDecrypt());
     }
 }
