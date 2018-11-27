@@ -15,11 +15,11 @@ public class UserServiceImpl implements UserService{
         return dao.add(user);
     }
 
-    public int update(User user) {
+    public String update(User user) {
         return dao.update(user);
     }
 
-    public int delete(String login) {
+    public String delete(String login) {
         return dao.delete(login);
     }
 

@@ -22,7 +22,12 @@ public class MainController {
     @Autowired
     private UserService service;
 
-    @RequestMapping (value = "/list", method = RequestMethod.GET)
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public String hello1(ModelMap map) {
+        return "redirect:list";
+    }
+
+    @RequestMapping(value = "/list", method = RequestMethod.GET)
     public String hello(ModelMap map) {
         List<User> list = service.list();
         map.addAttribute("list", service.list());
@@ -59,6 +64,11 @@ public class MainController {
     public ModelAndView deleteUser(@RequestParam String login) {
         service.delete(login);
         return new ModelAndView("redirect:list");
+    }
+
+    @RequestMapping(value = {"/assets/js/bootstrap.min.js"}, method = RequestMethod.GET)
+    public String asses() {
+        return "/assets/js/bootstrap.min.js";
     }
 
 }

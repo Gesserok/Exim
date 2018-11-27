@@ -25,37 +25,39 @@ public class UsersDaoImpl implements UsersDao{
     public String add(User user) {
         user.setEncrypt(Utils.encryptor(user.getDecrypt()));
         Session session = factory.openSession();
-         Serializable id = session.save(user);
+        Serializable id = session.save(user);
         System.out.println(user);
-
+        System.out.println("ADDED " + id);
         session.flush();
         session.close();
-        return "added";
+        return (String) id;
     }
 
     @Transactional
     @Override
-    public int update(User user) {
+    public String update(User user) {
 //        System.out.println("ENCRIPT : " + user.getId() + " " + user.getEncrypt());
         user.setEncrypt("new Encr");
         Session session = factory.openSession();
         session.update(user);
-        Serializable id = session.getIdentifier(user);
+        String id = (String) session.getIdentifier(user);
+        System.out.println("UPDATED " + id);
         session.flush();
         session.close();
-        return (Integer) id;
+        return id;
     }
 
     @Transactional
     @Override
-    public int delete(String login) {
+    public String delete(String login) {
         Session session = factory.openSession();
         User user = (User) session.get(User.class, login);
         session.delete(user);
-        Serializable serId = session.getIdentifier(user);
+        Serializable id = session.getIdentifier(user);
+        System.out.println("DELETED " + id);
         session.flush();
         session.close();
-        return (Integer) serId;
+        return (String) id;
     }
 
     @Transactional

@@ -7,8 +7,8 @@ import java.util.List;
 public interface UsersDao {
 
     String add(User user);
-    int update(User user);
-    int delete(String login);
+    String update(User user);
+    String delete(String login);
     User get(String login);
     List<User> list();
 
