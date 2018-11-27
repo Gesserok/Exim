@@ -1,49 +1,43 @@
 package ua.com.cib.exim.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+
+import javax.persistence.*;
 
 @Entity
-@Table (name = "userforward")
+@Table(name = "mail_copy")
 public class MailCopy {
 
     @Id
-    @Column(name = "local_part", unique = true, nullable = false,columnDefinition="VARCHAR(64)")
-    private String localPart;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
 
-    @Column(name = "domain", nullable = false,columnDefinition="VARCHAR(128)")
-    private String domain;
+    @Column(name = "mail", nullable = false,columnDefinition="VARCHAR(255)")
+    private String mail;
 
-    @Column(name = "recipients", nullable = false,columnDefinition="TEXT")
-    private String recipients;
+    @Column(name = "status", nullable = false, columnDefinition="TINYINT")
+    private boolean status;
 
-
-    public MailCopy() {
+    public int getId() {
+        return id;
     }
 
-    public String getLocalPart() {
-        return localPart;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public void setLocalPart(String localPart) {
-        this.localPart = localPart;
+    public String getMail() {
+        return mail;
     }
 
-    public String getDomain() {
-        return domain;
+    public void setMail(String mail) {
+        this.mail = mail;
     }
 
-    public void setDomain(String domain) {
-        this.domain = domain;
+    public boolean isStatus() {
+        return status;
     }
 
-    public String getRecipients() {
-        return recipients;
-    }
-
-    public void setRecipients(String recipients) {
-        this.recipients = recipients;
+    public void setStatus(boolean status) {
+        this.status = status;
     }
 }
