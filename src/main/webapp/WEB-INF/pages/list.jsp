@@ -11,17 +11,31 @@
             <tr>
                     <%--<th>Id</th>--%>
                 <th> Login </th>
-                <th> Encrypt </th>
+                <th> Name </th>
+                <th> Password </th>
                 <th> Decrypt </th>
+                <th> uid </th>
+                <th> gid </th>
+                <th> Domain </th>
+                <th> quota </th>
+                <th> copy_mail </th>
+                <th> Status </th>
                 <th> Operation</th>
             </tr>
             <c:forEach items="${list}" var="item">
                 <tr>
                         <%--<td><c:out value="${item.id}"/></td>--%>
                     <td><c:out value="${item.login}"/></td>
+                    <td><c:out value="${item.name}"/></td>
                         <%--<td><c:out value="${item.name}"/></td>--%>
-                    <td><c:out value="${item.encrypt}"/></td>
+                    <td><c:out value="${item.password}"/></td>
                     <td><c:out value="${item.decrypt}"/></td>
+                    <td><c:out value="${item.uid}"/></td>
+                    <td><c:out value="${item.gid}"/></td>
+                    <td><c:out value="${item.domain}"/></td>
+                    <td><c:out value="${item.quota}"/></td>
+                    <td><c:out value="${item.copyMail}"/></td>
+                    <td><c:out value="${item.status}"/></td>
                     <td>
                         <span><a href="update?login=${item.login}">edit</a></span>
                         <span><a href="delete?login=${item.login}">delete</a></span>

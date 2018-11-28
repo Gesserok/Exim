@@ -2,11 +2,11 @@ package ua.com.cib.exim.dto;
 
 import ua.com.cib.exim.model.MailCopy;
 import ua.com.cib.exim.model.User;
-import ua.com.cib.exim.model.UserForvard;
+import ua.com.cib.exim.model.UserForward;
 
 public class UserDTO {
     private User user;
-    private UserForvard userForvard;
+    private UserForward userForvard;
     private MailCopy mailCopy;
 
     public User getUser() {
@@ -17,11 +17,11 @@ public class UserDTO {
         this.user = user;
     }
 
-    public UserForvard getUserForvard() {
+    public UserForward getUserForvard() {
         return userForvard;
     }
 
-    public void setUserForvard(UserForvard userForvard) {
+    public void setUserForvard(UserForward userForvard) {
         this.userForvard = userForvard;
     }
 

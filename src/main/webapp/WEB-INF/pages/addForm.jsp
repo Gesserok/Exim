@@ -4,7 +4,7 @@
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@ taglib prefix="t" tagdir="/WEB-INF/tags" %>
 
-<t:layout1 title="New user">
+<t:layout title="New user">
     <form:form id="addForm" modelAttribute="newUser" method="post" action="submitNew">
         Enter Email address
         <form:input path="login"/>
@@ -15,5 +15,5 @@
     <a href="/list">Cancel</a>
 
 
-</t:layout1>
+</t:layout>
 

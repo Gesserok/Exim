@@ -1,6 +1,5 @@
 package ua.com.cib.exim.dao;
 
-import org.hibernate.FlushMode;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,7 +8,6 @@ import org.springframework.transaction.annotation.Transactional;
 import ua.com.cib.exim.model.User;
 import ua.com.cib.exim.utils.Utils;
 
-import javax.persistence.FlushModeType;
 import java.io.Serializable;
 import java.util.List;
 
@@ -23,7 +21,7 @@ public class UsersDaoImpl implements UsersDao{
     @Transactional
     @Override
     public String add(User user) {
-        user.setEncrypt(Utils.encryptor(user.getDecrypt()));
+        user.setPassword(String.format("SHA2('%s'), 224", user.getDecrypt()));
         Session session = factory.openSession();
         Serializable id = session.save(user);
         System.out.println(user);
@@ -37,7 +35,8 @@ public class UsersDaoImpl implements UsersDao{
     @Override
     public String update(User user) {
 //        System.out.println("ENCRIPT : " + user.getId() + " " + user.getEncrypt());
-        user.setEncrypt("new Encr");
+        user.setPassword(String.format("SHA2('%s',224)", user.getDecrypt()));
+
         Session session = factory.openSession();
         session.update(user);
         String id = (String) session.getIdentifier(user);
