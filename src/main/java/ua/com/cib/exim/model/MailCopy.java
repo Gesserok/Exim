@@ -18,6 +18,13 @@ public class MailCopy {
     @Column(name = "status", nullable = false, columnDefinition="TINYINT")
     private boolean status;
 
+    public MailCopy() {
+    }
+
+    public MailCopy(String mail) {
+        this.mail = mail;
+    }
+
     public int getId() {
         return id;
     }

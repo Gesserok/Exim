@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
+import ua.com.cib.exim.exception.SQLEntityAbsentException;
 import ua.com.cib.exim.model.User;
 import ua.com.cib.exim.services.UserService;
 
@@ -61,7 +62,7 @@ public class MainController {
     }
 
     @RequestMapping (value = "/delete", method = RequestMethod.GET)
-    public ModelAndView deleteUser(@RequestParam String login) {
+    public ModelAndView deleteUser(@RequestParam String login) throws SQLEntityAbsentException {
         service.delete(login);
         return new ModelAndView("redirect:list");
     }

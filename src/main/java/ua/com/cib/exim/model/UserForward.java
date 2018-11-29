@@ -21,6 +21,12 @@ public class UserForward {
 
 
     public UserForward() {
+        this.domain = "cib.local";
+    }
+    public UserForward(String localPart) {
+        this.localPart = localPart;
+        this.domain = "cib.local";
+        this.recipients = localPart.concat("@cib.com.ua");
     }
 
     public String getLocalPart() {

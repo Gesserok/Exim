@@ -33,12 +33,17 @@
         <property name="annotatedClasses">
             <list>
                 <value>ua.com.cib.exim.model.User</value>
+                <value>ua.com.cib.exim.model.MailCopy</value>
+                <value>ua.com.cib.exim.model.UserForward</value>
             </list>
         </property>
     </bean>
 
 
+    <bean id="mailDao" class="ua.com.cib.exim.dao.MailDaoImpl"/>
     <bean id="userDao" class="ua.com.cib.exim.dao.UsersDaoImpl"/>
+    <bean id="mailCopysDao" class="ua.com.cib.exim.dao.MailCopysDaoImpl"/>
+    <bean id="userForwardsDao" class="ua.com.cib.exim.dao.UserForwardsDaoImpl"/>
     <bean id="userService" class="ua.com.cib.exim.services.UserServiceImpl"/>
 
 
