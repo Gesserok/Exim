@@ -1,9 +1,11 @@
 package ua.com.cib.exim.dao;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.transaction.annotation.Transactional;
 import ua.com.cib.exim.exception.SQLEntityAbsentException;
+import ua.com.cib.exim.model.EximAliase;
 import ua.com.cib.exim.model.MailCopy;
 import ua.com.cib.exim.model.User;
 
@@ -18,6 +20,8 @@ public class MailDaoImpl implements MailDao {
     private UserForwardsDao userForwardsDao;
     @Autowired
     private MailCopysDao mailCopysDao;
+    @Autowired
+    private EximAliasesDao eximAliasesDao;
 
 
     @Transactional
@@ -26,7 +30,7 @@ public class MailDaoImpl implements MailDao {
         String id = usersDao.add(user);
         userForwardsDao.add(user);
         mailCopysDao.add(user);
-
+        eximAliasesDao.update("AllBank", user);
         return id;
     }
 
@@ -34,8 +38,6 @@ public class MailDaoImpl implements MailDao {
     @Override
     public String update(User user) {
         String id = usersDao.update(user);
-        mailCopysDao.update(user);
-        userForwardsDao.update(user);
         return id;
     }
 

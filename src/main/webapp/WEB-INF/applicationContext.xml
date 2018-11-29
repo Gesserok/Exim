@@ -35,6 +35,7 @@
                 <value>ua.com.cib.exim.model.User</value>
                 <value>ua.com.cib.exim.model.MailCopy</value>
                 <value>ua.com.cib.exim.model.UserForward</value>
+                <value>ua.com.cib.exim.model.EximAliase</value>
             </list>
         </property>
     </bean>
@@ -42,6 +43,7 @@
 
     <bean id="mailDao" class="ua.com.cib.exim.dao.MailDaoImpl"/>
     <bean id="userDao" class="ua.com.cib.exim.dao.UsersDaoImpl"/>
+    <bean id="eximAliase" class="ua.com.cib.exim.dao.EximAliasesDaoImpl"/>
     <bean id="mailCopysDao" class="ua.com.cib.exim.dao.MailCopysDaoImpl"/>
     <bean id="userForwardsDao" class="ua.com.cib.exim.dao.UserForwardsDaoImpl"/>
     <bean id="userService" class="ua.com.cib.exim.services.UserServiceImpl"/>
@@ -52,6 +54,9 @@
     </bean>
     <tx:annotation-driven transaction-manager="transactionManager"/>
 
+    <bean id="allBank" class="ua.com.cib.exim.model.EximAliase">
+        <constructor-arg value="allBank"/>
+    </bean>
 
 
 
