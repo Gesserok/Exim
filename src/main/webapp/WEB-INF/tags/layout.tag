@@ -18,10 +18,16 @@
     <div class="container">
         <ul class="nav navbar-nav navbar-left">
             <li>
-                <a href="list"><span class="glyphicon glyphicon-list-alt"></span>List of emails</a>
+                <a href="/user/list"><span class="glyphicon glyphicon-list-alt"></span>List of emails</a>
             </li>
             <li>
-                <a href="create"><span class="glyphicon glyphicon-plus"></span>Add new email</a>
+                <a href="/user/create"><span class="glyphicon glyphicon-plus"></span>Add new email</a>
+            </li>
+            <li>
+                <a href="/aliase/list"><span class="glyphicon glyphicon-plus"></span>Aliases</a>
+            </li>
+            <li>
+                <a href="/aliase/create"><span class="glyphicon glyphicon-plus"></span>Add new aliase</a>
             </li>
             <%--<li>--%>
                 <%--<a href="register"><span class="glyphicon glyphicon-user"></span> Зарегистрироваться</a>--%>
