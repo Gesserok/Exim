@@ -42,18 +42,18 @@ public class AliaseController {
     @RequestMapping (value = "/aliase/submitNew", method = RequestMethod.POST)
     public ModelAndView createAliase(@ModelAttribute EximAliase newAliase) {
         service.add(newAliase);
-        return new ModelAndView("redirect:aliase");
+        return new ModelAndView("redirect:/aliase/list");
     }
 
     @RequestMapping (value = "/aliase/submitUpdate", method = RequestMethod.POST)
     public ModelAndView updateAliase(@ModelAttribute EximAliase updateAliase) {
         service.update(updateAliase);
-        return new ModelAndView("redirect:aliase");
+        return new ModelAndView("redirect:/aliase/list");
     }
 
     @RequestMapping (value = "/aliase/delete", method = RequestMethod.GET)
-    public ModelAndView deleteAliase(@RequestParam String login) throws SQLEntityAbsentException {
-        service.delete(login);
-        return new ModelAndView("redirect:aliase");
+    public ModelAndView deleteAliase(@RequestParam String localPart) throws SQLEntityAbsentException {
+        service.delete(localPart);
+        return new ModelAndView("redirect:/aliase/list");
     }
 }

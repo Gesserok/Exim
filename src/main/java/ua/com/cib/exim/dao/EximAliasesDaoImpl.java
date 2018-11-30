@@ -59,11 +59,11 @@ public class EximAliasesDaoImpl implements EximAliasesDao {
 
     @Transactional
     @Override
-    public String delete(String login) {
+    public String delete(String eximAliaseName) {
         Session session = factory.openSession();
-        User user = (User) session.get(User.class, login);
-        session.delete(user);
-        Serializable id = session.getIdentifier(user);
+        EximAliase eximAliase = (EximAliase) session.get(EximAliase.class, eximAliaseName);
+        session.delete(eximAliase);
+        Serializable id = session.getIdentifier(eximAliase);
         session.flush();
         session.close();
         return (String) id;

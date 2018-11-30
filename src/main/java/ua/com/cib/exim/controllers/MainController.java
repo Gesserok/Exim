@@ -36,8 +36,6 @@ public class MainController {
         return "list";
     }
 
-
-
     @RequestMapping (value = "/user/create", method = RequestMethod.GET)
     public ModelAndView createNewForm() {
         ModelAndView modelAndView = new ModelAndView("addForm");

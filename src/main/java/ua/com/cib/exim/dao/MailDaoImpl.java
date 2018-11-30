@@ -61,19 +61,4 @@ public class MailDaoImpl implements MailDao {
         return usersDao.list();
     }
 
-//    @Override
-//    public List<EximAliase> aliase() {
-//        return eximAliasesDao.list();
-//    }
-//
-//    @Override
-//    public String add(EximAliase eximAliase) {
-//        return eximAliasesDao.add(eximAliase);
-//    }
-//
-//    @Override
-//    public String update(EximAliase eximAliase) {
-//        String id = eximAliasesDao.update(eximAliase);
-//        return id;
-//    }
 }

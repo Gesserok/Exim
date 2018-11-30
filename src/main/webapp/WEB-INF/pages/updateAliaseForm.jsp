@@ -5,15 +5,15 @@
 <%@ taglib prefix="t" tagdir="/WEB-INF/tags" %>
 
 <t:layout title="Update Aliase">
-    <form:form id="addAliaseForm" modelAttribute="updateAliase" method="post" action="submitUpdate">
+    <form:form id="updateAliaseForm" modelAttribute="updateAliase" method="post" action="submitUpdate">
         Enter Aliase Name
         <form:input path="localPart"/>
-        <%--Enter Email password--%>
-        <%--<form:password path="decrypt" title="password"/>--%>
+        Enter recipients line
+        <form:input path="recipients"/>
         <%--<form:hidden path="id"/>--%>
         <form:button value="submit">Save</form:button>
     </form:form>
-    <span><a href="/list">Cancel</a></span>
+    <span><a href="/aliase/list">Cancel</a></span>
     <span><a href="/delete?localPart=${updateAliase.localPart}">Delete</a></span>
 
 </t:layout>
