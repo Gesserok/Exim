@@ -26,52 +26,57 @@ public class MainController {
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String hello(ModelMap map) {
-        return "list";
+        return "WEB-INF/views/home.jsp";
     }
 
-    @RequestMapping(value = "user/list", method = RequestMethod.GET)
-    public String list(ModelMap map) {
-        List<User> list = service.list();
-        map.addAttribute("list", service.list());
-        return "list";
+//    @RequestMapping(value = {"user/list", "admin/list"}, method = RequestMethod.GET)
+//    public String list(ModelMap map) {
+//        List<User> list = service.list();
+//        map.addAttribute("list", service.list());
+//        return "list";
+//    }
+
+    @RequestMapping(value = "/admin/privatePage", method = RequestMethod.GET)
+    public String privatePage() {
+        return "WEB-INF/views/privatePage.jsp";
     }
 
-    @RequestMapping (value = "/user/create", method = RequestMethod.GET)
+    @RequestMapping (value = {"user/list", "admin/list"}, method = RequestMethod.GET)
     public ModelAndView createNewForm() {
         ModelAndView modelAndView = new ModelAndView("addForm");
         modelAndView.getModelMap().addAttribute("newUser", new User());
         return modelAndView;
     }
 
-    @RequestMapping (value = "/user/update", method = RequestMethod.GET)
+    @RequestMapping (value = {"user/list", "admin/list"}, method = RequestMethod.GET)
     public ModelAndView updateUser(@RequestParam String login) {
         ModelAndView modelAndView = new ModelAndView("updateForm");
         modelAndView.getModelMap().addAttribute("updateUser", service.get(login));
         return modelAndView;
     }
 
-    @RequestMapping (value = "/user/submitNew", method = RequestMethod.POST)
+    @RequestMapping (value = {"user/list", "admin/list"}, method = RequestMethod.POST)
     public ModelAndView createUser(@ModelAttribute User newUser) {
         service.add(newUser);
         return new ModelAndView("redirect:list");
     }
 
-    @RequestMapping (value = "/user/submitUpdate", method = RequestMethod.POST)
+    @RequestMapping (value = {"user/list", "admin/list"}, method = RequestMethod.POST)
     public ModelAndView updateUser(@ModelAttribute User updateUser) {
         service.update(updateUser);
         return new ModelAndView("redirect:list");
     }
 
-    @RequestMapping (value = "/user/delete", method = RequestMethod.GET)
+    @RequestMapping (value = {"user/list", "admin/list"}, method = RequestMethod.GET)
     public ModelAndView deleteUser(@RequestParam String login) throws SQLEntityAbsentException {
         service.delete(login);
         return new ModelAndView("redirect:list");
     }
 
-//    @RequestMapping(value = {"/assets/js/bootstrap.min.js"}, method = RequestMethod.GET)
-//    public String asses() {
-//        return "/assets/js/bootstrap.min.js";
-//    }
+    @RequestMapping(value = {"/assets/js/bootstrap.min.js"}, method = RequestMethod.GET)
+    public String asses() {
+        return "/assets/js/bootstrap.min.js";
+    }
 
 
 }

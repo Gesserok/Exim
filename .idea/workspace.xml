@@ -6,16 +6,46 @@
     </artifacts-to-build>
   </component>
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/ua/com/cib/exim/model/MailCopy.java" line="13" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/model/MailCopy.java" line="13" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b69998c8-0636-4a97-b76d-d6fbb0a48ffd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/privatePage.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/security-context.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/controllers/AliaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/controllers/AliaseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/controllers/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/dao/EximAliasesDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/dao/EximAliasesDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/dao/MailDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/dao/MailDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/updateAliaseForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/updateAliaseForm.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/controllers/AliaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AliaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/controllers/DispatcherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/controllers/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/dao/EximAliasesDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/dao/EximAliasesDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/dao/EximAliasesDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/dao/EximAliasesDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/dao/MailCopysDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/dao/MailCopysDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/dao/MailCopysDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/dao/MailCopysDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/dao/MailDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/dao/MailDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/dao/MailDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/dao/MailDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/dao/UserForwardsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/dao/UserForwardsDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/dao/UserForwardsDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/dao/UserForwardsDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/dao/UsersDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/dao/UsersDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/dao/UsersDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/dao/UsersDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/exception/SQLEntityAbsentException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/exception/SQLEntityAbsentException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/model/EximAliase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/EximAliase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/model/MailCopy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/MailCopy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/model/UserForward.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/UserForward.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/services/AliaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/services/AliaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/services/AliaseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/services/AliaseServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/services/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/services/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/utils/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/layout.tag" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/layout.tag" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -81,10 +111,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/cib/exim/controllers/MainController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="60" column="18" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
+            <state relative-caret-position="391">
+              <caret line="38" column="47" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -93,95 +123,87 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/cib/exim/services/UserService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+            <state relative-caret-position="748">
+              <caret line="44" selection-start-line="44" selection-end-line="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="7140">
+              <caret line="420" column="12" selection-start-line="420" selection-start-column="12" selection-end-line="420" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="74" selection-start-line="1" selection-start-column="74" selection-end-line="1" selection-end-column="74" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/cib/exim/controllers/HomeController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#343#344#0" expanded="true" />
+                <element signature="e#372#373#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/cib/exim/services/UserServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="43" selection-start-line="43" selection-end-line="43" />
+            <state relative-caret-position="170">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/updateAliaseForm.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/applicationContext.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="55" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
+            <state>
+              <caret column="32" selection-start-column="30" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/updateForm.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/dispatcher-servlet.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="93" selection-start-line="7" selection-start-column="81" selection-end-line="7" selection-end-column="93" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/layout.tag">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/cib/exim/controllers/AliaseController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="55" column="32" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/cib/exim/services/AliaseService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/cib/exim/services/AliaseServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="22" column="22" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="22" />
-              <folding>
-                <element signature="e#510#511#0" expanded="true" />
-                <element signature="e#555#556#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="391">
+              <caret line="23" column="15" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/cib/exim/dao/EximAliasesDaoImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/security-context.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="68" column="27" lean-forward="true" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
+            <state relative-caret-position="85">
+              <caret line="5" column="70" selection-start-line="5" selection-start-column="70" selection-end-line="5" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root-context.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -199,37 +221,40 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>del</find>
-      <find>Exim_war</find>
-      <find>MAILCOPY</find>
-      <find>MAILCOPY</find>
-      <find>de</find>
-      <find>/local</find>
-      <find>ite</find>
-      <find>aliase</find>
-      <find>exim</find>
-      <find>war</find>
-      <find>item</find>
-      <find>/aliases</find>
-      <find>add</find>
-      <find>a</find>
-      <find>newUser</find>
-      <find>update</find>
-      <find>newAliase</find>
-      <find>alia</find>
-      <find>getLo</find>
-      <find>updateAliase</find>
-      <find>aliases</find>
-      <find>serv</find>
-      <find>list</find>
-      <find>su</find>
-      <find>submitU</find>
-      <find>updateAliaseForm</find>
-      <find>submitUpdate</find>
-      <find>dele</find>
-      <find>delete</find>
-      <find>/de</find>
+      <find>reso</find>
+      <find>driven</find>
+      <find>appli</find>
+      <find>dispatcher-servlet</find>
+      <find>logging</find>
+      <find>onload</find>
+      <find>3.1.xsd</find>
+      <find>mailDao</find>
+      <find>view</find>
+      <find>listener</find>
+      <find>security</find>
+      <find>root</find>
+      <find>ser</find>
+      <find>Dispa</find>
+      <find>loa</find>
+      <find>appServlet</find>
+      <find>load</find>
+      <find>pages</find>
+      <find>comm</find>
+      <find>jsp-api</find>
+      <find>log</find>
+      <find>log4</find>
+      <find>dis</find>
+      <find>context:component-scan</find>
+      <find>disp</find>
+      <find>contex</find>
+      <find>servlet-name</find>
+      <find>contextLoa</find>
+      <find>jcl-over-slf4j</find>
+      <find>dispa</find>
     </findStrings>
+    <replaceStrings>
+      <replace>4.1.xsd</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
@@ -238,17 +263,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/database.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/dao/UsersDaoImpl1.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/js/jquery-3.3.1.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/assets/css/style.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/controllers/DispatcherController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/assets/js/jquery-3.1.1.min.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/layout_copy.tag" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/model/Admin.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/model/UserForvard.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/dto/UserDTO.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/updateForm.jsp" />
@@ -272,23 +287,33 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addForm.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/list.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addFormAliase.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/layout.tag" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addAliaseForm.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/aliase.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/services/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/dao/AliaseDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/services/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/dao/MailDao.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/services/AliaseService.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/dao/EximAliasesDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/services/AliaseServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/model/EximAliase.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/dao/MailDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/controllers/MainController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/updateAliaseForm.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/controllers/AliaseController.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/dao/EximAliasesDaoImpl.java" />
+        <option value="$PROJECT_DIR$/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/model/Admin.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/layout.tag" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root-context.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/controllers/MainController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/controllers/DispatcherController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/controllers/HomeController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/security-context.xml" />
       </list>
     </option>
   </component>
@@ -323,11 +348,6 @@
           <item name="Exim" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="Exim" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
       </expand>
       <select />
     </treeState>
@@ -346,8 +366,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -428,42 +448,6 @@
               <item name="Exim" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ua" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="cib" type="462c0819:PsiDirectoryNode" />
-              <item name="exim" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Exim" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Exim" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ua" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="cib" type="462c0819:PsiDirectoryNode" />
-              <item name="exim" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Exim" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Exim" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ua" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="cib" type="462c0819:PsiDirectoryNode" />
-              <item name="exim" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Exim" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Exim" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -471,6 +455,13 @@
               <item name="Exim" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Exim" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Exim" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -488,7 +479,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Exim" type="b2602c69:ProjectViewProjectNode" />
@@ -497,7 +488,17 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="tags" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="appServlet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Exim" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Exim" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -509,38 +510,40 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543590227639" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543855077791" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../spring/spring-demonstration/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.XML" />
+    <property name="settings.editor.selected.configurable" value="spring.boot" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\JAVA\CIB\Exim\src\main" />
+      <recent name="C:\JAVA\CIB\exim\src\main\webapp" />
+      <recent name="C:\JAVA\CIB\exim\src\main\webapp\WEB-INF\assets\css" />
+      <recent name="C:\JAVA\CIB\exim\src\main\webapp\WEB-INF" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\JAVA\CIB\Exim\src\main\resources" />
+      <recent name="C:\JAVA\CIB\Exim\src\main\webapp\WEB-INF\pages" />
+      <recent name="C:\JAVA\CIB\Exim\src\main\webapp\WEB-INF" />
+      <recent name="C:\JAVA\CIB\Exim" />
+      <recent name="C:\JAVA\CIB\Exim\src\main\java\ua\com\cib\exim\dao" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ua.com.cib.exim.model" />
+      <recent name="ua.com.cib.exim.services" />
+      <recent name="ua.com.cib.exim.dao" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="ua.com.cib.exim.dao" />
       <recent name="ua.com.cib.exim.exception" />
       <recent name="ua.com.cib.exim.model" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\JAVA\CIB\Exim\src\main\webapp\WEB-INF\pages" />
-      <recent name="C:\JAVA\CIB\Exim\src\main\java\ua\com\cib\exim\dao" />
-      <recent name="C:\JAVA\CIB\exim\src\main\webapp\WEB-INF\tags" />
-      <recent name="C:\JAVA\CIB\exim\src\main\webapp\WEB-INF" />
-      <recent name="C:\JAVA\CIB\exim\src\main\webapp\WEB-INF\assets\css" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="ua.com.cib.exim.services" />
-      <recent name="ua.com.cib.exim.dao" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\JAVA\CIB\exim\src\main\webapp" />
-      <recent name="C:\JAVA\CIB\exim\src\main\webapp\WEB-INF\assets\css" />
-      <recent name="C:\JAVA\CIB\exim\src\main\webapp\WEB-INF" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -561,7 +564,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Tomcat 9.0.131" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.131" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+    <configuration name="Tomcat 9.0.131" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.131" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="Exim:war">
@@ -725,18 +728,20 @@
       <workItem from="1542975835921" duration="86000" />
       <workItem from="1542975949172" duration="28928000" />
       <workItem from="1543307246266" duration="19336000" />
-      <workItem from="1543407075349" duration="35812000" />
+      <workItem from="1543407075349" duration="52730000" />
+      <workItem from="1543851416728" duration="11000" />
+      <workItem from="1543851514983" duration="3617000" />
+      <workItem from="1543855193180" duration="18000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114710000" />
+    <option name="totallyTimeSpent" value="135274000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49879518" visible="true" weight="0.20682302" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49879518" visible="true" weight="0.21321961" />
       <window_info id="Structure" order="1" sideWeight="0.50120485" side_tool="true" weight="0.20415778" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -746,7 +751,7 @@
       <window_info id="Web" order="7" side_tool="true" weight="0.32995737" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49733475" visible="true" weight="0.44420367" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49733475" weight="0.44420367" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946696" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -755,7 +760,7 @@
       <window_info anchor="bottom" id="Application Servers" order="8" weight="0.32936078" />
       <window_info anchor="bottom" id="Analysis" order="9" />
       <window_info anchor="bottom" id="Spring" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49840087" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49840087" weight="0.22318527" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5026652" side_tool="true" weight="0.17551462" />
       <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.49946696" weight="0.32936078" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" />
@@ -822,16 +827,10 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ua/com/cib/exim/services/AliaseServiceImpl.java</url>
+          <url>file://$PROJECT_DIR$/src/main/services/AliaseServiceImpl.java</url>
           <line>19</line>
           <properties />
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ua/com/cib/exim/dao/EximAliasesDaoImpl.java</url>
-          <line>62</line>
-          <properties />
-          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -842,80 +841,7 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/css/bootstrap-reboot.min.css" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/js/jquery-3.3.1.js" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/cib/exim/controllers/DispatcherController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#443#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/jquery-3.3.1.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="85163" selection-start-line="1" selection-start-column="85163" selection-end-line="1" selection-end-column="85163" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/layout1.tag">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-36">
-          <caret line="27" column="25" selection-start-line="25" selection-start-column="12" selection-end-line="27" selection-end-column="25" />
-          <folding>
-            <element signature="e#1404#1410#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/cib/exim/model/Admin.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/cib/exim/utils/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/cib/exim/dao/UsersDaoImpl1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-85">
-          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/cib/exim/model/UserForvard.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/cib/exim/model/Status.java" />
-    <entry file="das://d102626d-43c0-453a-8c19-a4498c95b822/schema/exim/table/users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/cib/exim/dto/UserDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#604#605#0" expanded="true" />
-            <element signature="e#635#636#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/cib/exim/dto/UserDTO.java" />
     <entry file="das://d102626d-43c0-453a-8c19-a4498c95b822/schema/exim/table/userforward">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -923,7 +849,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/cib/exim/model/UserForward.java">
+    <entry file="file://$PROJECT_DIR$/src/main/model/UserForward.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="257">
           <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
@@ -949,21 +875,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/cib/exim/exception/SQLEntityAbsentException.java">
+    <entry file="file://$PROJECT_DIR$/src/main/exception/SQLEntityAbsentException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/cib/exim/dao/UserForwardsDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/dao/UserForwardsDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/cib/exim/model/MailCopy.java">
+    <entry file="file://$PROJECT_DIR$/src/main/model/MailCopy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
           <caret line="14" column="24" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="24" />
@@ -981,7 +907,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/cib/exim/dao/UserForwardsDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/dao/UserForwardsDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="41" column="19" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
@@ -995,38 +921,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/cib/exim/dao/MailCopysDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/dao/MailCopysDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/cib/exim/dao/MailCopysDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/dao/MailCopysDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="25" column="72" selection-start-line="23" selection-start-column="8" selection-end-line="25" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="23" column="7" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="40" column="51" selection-start-line="40" selection-start-column="51" selection-end-line="40" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -1037,14 +942,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="32" lean-forward="true" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/cib/exim/model/User.java">
+    <entry file="file://$PROJECT_DIR$/src/main/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
@@ -1056,17 +954,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/cib/exim/dao/AliaseDao.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/aliase.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/cib/exim/dao/UsersDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/cib/exim/dao/AliaseDao.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/dao/UsersDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
@@ -1076,7 +965,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/cib/exim/dao/UsersDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/dao/UsersDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="26" selection-start-line="26" selection-end-line="26" />
@@ -1086,21 +975,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addAliaseForm.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="32" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/cib/exim/dao/MailDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/dao/MailDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" selection-start-line="13" selection-end-line="13" />
@@ -1110,14 +985,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/cib/exim/dao/EximAliasesDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/dao/EximAliasesDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/cib/exim/model/EximAliase.java">
+    <entry file="file://$PROJECT_DIR$/src/main/model/EximAliase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
@@ -1127,7 +1002,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/cib/exim/dao/MailDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/dao/MailDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="326">
           <caret line="62" selection-start-line="62" selection-end-line="62" />
@@ -1137,7 +1012,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/cib/exim/services/UserServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/services/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="451">
           <caret line="43" selection-start-line="43" selection-end-line="43" />
@@ -1151,17 +1026,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/cib/exim/controllers/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="60" column="18" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/cib/exim/services/UserService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/services/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
@@ -1171,20 +1036,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/cib/exim/services/AliaseService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/services/AliaseService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/layout.tag">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -1195,7 +1053,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/cib/exim/services/AliaseServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/services/AliaseServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="22" column="22" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="22" />
@@ -1206,9 +1064,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/cib/exim/controllers/AliaseController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/dao/EximAliasesDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
+        <state relative-caret-position="221">
+          <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/4.1.4.RELEASE/spring-jdbc-4.1.4.RELEASE.jar!/org/springframework/jdbc/datasource/DriverManagerDataSource.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-219">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/home.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/privatePage.jsp" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/cib/exim/model/Admin.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addAliaseForm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/aliase.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="3" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/layout.tag">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/privatePage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/AliaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
           <caret line="55" column="32" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1216,10 +1130,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/cib/exim/dao/EximAliasesDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="68" column="27" lean-forward="true" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
+        <state relative-caret-position="391">
+          <caret line="38" column="47" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7140">
+          <caret line="420" column="12" selection-start-line="420" selection-start-column="12" selection-end-line="420" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="74" selection-start-line="1" selection-start-column="74" selection-end-line="1" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/cib/exim/controllers/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#343#344#0" expanded="true" />
+            <element signature="e#372#373#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="32" selection-start-column="30" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="15" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root-context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/security-context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="70" selection-start-line="5" selection-start-column="70" selection-end-line="5" selection-end-column="70" />
         </state>
       </provider>
     </entry>

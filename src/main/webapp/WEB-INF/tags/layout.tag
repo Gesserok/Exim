@@ -40,6 +40,7 @@
     <jsp:doBody/>
 </div>
 
+<a href="<c:url value='/logout'/>">Logout</a>
 
 <footer class="panel-footer">
     <div class="container">

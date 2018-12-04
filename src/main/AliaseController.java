@@ -19,39 +19,39 @@ public class AliaseController {
     @Autowired
     private AliaseService service;
 
-    @RequestMapping(value = "/admin/aliase/list", method = RequestMethod.GET)
+    @RequestMapping(value = "/aliase/list", method = RequestMethod.GET)
     public String aliases(ModelMap map) {
         List<EximAliase> list = service.listOfAliase();
         map.addAttribute("aliase", service.listOfAliase());
         return "aliase";
     }
-    @RequestMapping (value = {"/admin/aliase/create","/user/aliase/create"}, method = RequestMethod.GET)
+    @RequestMapping (value = "/aliase/create", method = RequestMethod.GET)
     public ModelAndView createNewAliaseForm() {
         ModelAndView modelAndView = new ModelAndView("addAliaseForm");
         modelAndView.getModelMap().addAttribute("newAliase", new EximAliase());
         return modelAndView;
     }
 
-    @RequestMapping (value = {"/admin/aliase/update","/user/aliase/update"}, method = RequestMethod.GET)
+    @RequestMapping (value = "/aliase/update", method = RequestMethod.GET)
     public ModelAndView updateAliase(@RequestParam String localPart) {
         ModelAndView modelAndView = new ModelAndView("updateAliaseForm");
         modelAndView.getModelMap().addAttribute("updateAliase", service.get(localPart));
         return modelAndView;
     }
 
-    @RequestMapping (value = "/admin/aliase/submitNew", method = RequestMethod.POST)
+    @RequestMapping (value = "/aliase/submitNew", method = RequestMethod.POST)
     public ModelAndView createAliase(@ModelAttribute EximAliase newAliase) {
         service.add(newAliase);
         return new ModelAndView("redirect:/aliase/list");
     }
 
-    @RequestMapping (value = {"/admin/aliase/submitUpdate","/user/aliase/submitUpdate"}, method = RequestMethod.POST)
+    @RequestMapping (value = "/aliase/submitUpdate", method = RequestMethod.POST)
     public ModelAndView updateAliase(@ModelAttribute EximAliase updateAliase) {
         service.update(updateAliase);
         return new ModelAndView("redirect:/aliase/list");
     }
 
-    @RequestMapping (value = {"/admin/aliase/delete","/user/aliase/delete"} , method = RequestMethod.GET)
+    @RequestMapping (value = "/aliase/delete", method = RequestMethod.GET)
     public ModelAndView deleteAliase(@RequestParam String localPart) throws SQLEntityAbsentException {
         service.delete(localPart);
         return new ModelAndView("redirect:/aliase/list");
