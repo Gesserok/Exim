@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
-import ua.com.cib.exim.exception.SQLEntityAbsentException;
 import ua.com.cib.exim.model.EximAliase;
 import ua.com.cib.exim.services.AliaseService;
 
@@ -25,14 +24,14 @@ public class AliaseController {
         map.addAttribute("aliase", service.listOfAliase());
         return "aliase";
     }
-    @RequestMapping (value = {"/admin/aliase/create","/user/aliase/create"}, method = RequestMethod.GET)
+    @RequestMapping (value = "/admin/aliase/create", method = RequestMethod.GET)
     public ModelAndView createNewAliaseForm() {
         ModelAndView modelAndView = new ModelAndView("addAliaseForm");
         modelAndView.getModelMap().addAttribute("newAliase", new EximAliase());
         return modelAndView;
     }
 
-    @RequestMapping (value = {"/admin/aliase/update","/user/aliase/update"}, method = RequestMethod.GET)
+    @RequestMapping (value = "/admin/aliase/update", method = RequestMethod.GET)
     public ModelAndView updateAliase(@RequestParam String localPart) {
         ModelAndView modelAndView = new ModelAndView("updateAliaseForm");
         modelAndView.getModelMap().addAttribute("updateAliase", service.get(localPart));
@@ -42,18 +41,18 @@ public class AliaseController {
     @RequestMapping (value = "/admin/aliase/submitNew", method = RequestMethod.POST)
     public ModelAndView createAliase(@ModelAttribute EximAliase newAliase) {
         service.add(newAliase);
-        return new ModelAndView("redirect:/aliase/list");
+        return new ModelAndView("redirect:/admin/aliase/list");
     }
 
-    @RequestMapping (value = {"/admin/aliase/submitUpdate","/user/aliase/submitUpdate"}, method = RequestMethod.POST)
+    @RequestMapping (value = "/admin/aliase/submitUpdate", method = RequestMethod.POST)
     public ModelAndView updateAliase(@ModelAttribute EximAliase updateAliase) {
         service.update(updateAliase);
-        return new ModelAndView("redirect:/aliase/list");
+        return new ModelAndView("redirect:/admin/aliase/list");
     }
 
-    @RequestMapping (value = {"/admin/aliase/delete","/user/aliase/delete"} , method = RequestMethod.GET)
-    public ModelAndView deleteAliase(@RequestParam String localPart) throws SQLEntityAbsentException {
+    @RequestMapping (value = "/admin/aliase/delete" , method = RequestMethod.GET)
+    public ModelAndView deleteAliase(@RequestParam String localPart){
         service.delete(localPart);
-        return new ModelAndView("redirect:/aliase/list");
+        return new ModelAndView("redirect:/admin/aliase/list");
     }
 }

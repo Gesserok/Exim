@@ -1,6 +1,5 @@
 package ua.com.cib.exim.services;
 
-import ua.com.cib.exim.exception.SQLEntityAbsentException;
 import ua.com.cib.exim.model.EximAliase;
 import ua.com.cib.exim.model.User;
 
@@ -10,7 +9,7 @@ public interface UserService {
 
     String add(User user);
     String update(User user);
-    String delete(String login) throws SQLEntityAbsentException;
+    String delete(String login);
     User get(String login);
     List<User> list();
 

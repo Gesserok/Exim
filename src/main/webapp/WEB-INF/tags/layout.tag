@@ -18,16 +18,16 @@
     <div class="container">
         <ul class="nav navbar-nav navbar-left">
             <li>
-                <a href="/user/list"><span class="glyphicon glyphicon-list-alt"></span>List of emails</a>
+                <a href="/admin/user/list"><span class="glyphicon glyphicon-list-alt"></span>List of emails</a>
             </li>
             <li>
-                <a href="/user/create"><span class="glyphicon glyphicon-plus"></span>Add new email</a>
+                <a href="/admin/user/create"><span class="glyphicon glyphicon-plus"></span>Add new email</a>
             </li>
             <li>
-                <a href="/aliase/list"><span class="glyphicon glyphicon-plus"></span>Aliases</a>
+                <a href="/admin/aliase/list"><span class="glyphicon glyphicon-plus"></span>Aliases</a>
             </li>
             <li>
-                <a href="/aliase/create"><span class="glyphicon glyphicon-plus"></span>Add new aliase</a>
+                <a href="/admin/aliase/create"><span class="glyphicon glyphicon-plus"></span>Add new aliase</a>
             </li>
             <%--<li>--%>
                 <%--<a href="register"><span class="glyphicon glyphicon-user"></span> Зарегистрироваться</a>--%>
@@ -40,7 +40,7 @@
     <jsp:doBody/>
 </div>
 
-<a href="<c:url value='/logout'/>">Logout</a>
+<a href="<c:url value="/logout" />">Logout</a>
 
 <footer class="panel-footer">
     <div class="container">

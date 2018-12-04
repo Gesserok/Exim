@@ -2,7 +2,6 @@ package ua.com.cib.exim.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import ua.com.cib.exim.dao.EximAliasesDao;
-import ua.com.cib.exim.exception.SQLEntityAbsentException;
 import ua.com.cib.exim.model.EximAliase;
 
 import java.util.List;

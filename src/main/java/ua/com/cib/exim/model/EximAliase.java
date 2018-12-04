@@ -31,6 +31,12 @@ public class EximAliase {
         this.recipients = "";
     }
 
+    public EximAliase(String localPart, String recipients) {
+        this.localPart = localPart;
+        this.domain = "cib.com.ua";
+        this.recipients = recipients;
+    }
+
     public String getLocalPart() {
         return localPart;
     }

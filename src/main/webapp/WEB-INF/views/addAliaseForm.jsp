@@ -8,6 +8,8 @@
     <form:form id="addAliaseForm" modelAttribute="newAliase" method="post" action="submitNew">
         Enter Aliase Name
         <form:input path="localPart"/>
+        Enter recipients line
+        <form:input path="recipients"/>
         <%--Enter Email password--%>
         <%--<form:password path="decrypt" title="password"/>--%>
         <form:button value="submit">Save</form:button>

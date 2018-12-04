@@ -8,16 +8,15 @@
 	<http auto-config="true" use-expressions="true">
 
 		<intercept-url pattern="/**" access="hasAnyAuthority('ROLE_USER','ROLE_ADMIN','ROLE_MODERATOR')" />
-		<form-login />
+		<form-login login-processing-url="/login"/>
 
 		<intercept-url pattern="/admin/*"
-					   access="hasAnyRole('ROLE_ADMIN','ROLE_MODERATOR')" />
-		<logout logout-success-url="/admin"/>
+					   access="hasAnyRole('ROLE_ADMIN')" />
+		<logout logout-success-url="/"/>
 
 		<intercept-url pattern="/user/*"
 					   access="hasAnyRole('ROLE_ADMIN','ROLE_MODERATOR')" />
-		<logout logout-success-url="/user"/>
-
+		<logout logout-success-url="/login" invalidate-session="false" logout-url="/logout"/>
 
 	</http>
 

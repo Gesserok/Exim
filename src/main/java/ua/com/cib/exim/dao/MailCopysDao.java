@@ -1,6 +1,5 @@
 package ua.com.cib.exim.dao;
 
-import ua.com.cib.exim.exception.SQLEntityAbsentException;
 import ua.com.cib.exim.model.MailCopy;
 import ua.com.cib.exim.model.User;
 
