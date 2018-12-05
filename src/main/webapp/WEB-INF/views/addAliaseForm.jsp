@@ -14,7 +14,7 @@
         <%--<form:password path="decrypt" title="password"/>--%>
         <form:button value="submit">Save</form:button>
     </form:form>
-    <a href="/aliase">Cancel</a>
+    <a href="/admin/aliase/list">Cancel</a>
 
 
 </t:layout>

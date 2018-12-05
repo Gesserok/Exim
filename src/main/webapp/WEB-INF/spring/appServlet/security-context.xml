@@ -1,40 +1,70 @@
 <beans:beans xmlns="http://www.springframework.org/schema/security"
-	xmlns:beans="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans
+			 xmlns:beans="http://www.springframework.org/schema/beans"
+			 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			 xmlns:sec="http://www.springframework.org/schema/c"
+			 xmlns:context="http://www.springframework.org/schema/context"
+
+			 xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
     http://www.springframework.org/schema/security
-    http://www.springframework.org/schema/security/spring-security-4.0.xsd">
+    http://www.springframework.org/schema/security/spring-security-4.0.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<http auto-config="true" use-expressions="true">
 
-		<intercept-url pattern="/**" access="hasAnyAuthority('ROLE_USER','ROLE_ADMIN','ROLE_MODERATOR')" />
-		<form-login login-processing-url="/login"/>
+	<!--<http auto-config="true" use-expressions="true">-->
 
-		<intercept-url pattern="/admin/*"
-					   access="hasAnyRole('ROLE_ADMIN')" />
-		<logout logout-success-url="/"/>
+	<!--<intercept-url pattern="/**" access="hasAnyAuthority('ROLE_USER','ROLE_ADMIN','ROLE_MODERATOR')" />-->
+	<!--<form-login login-processing-url="/login"/>-->
 
-		<intercept-url pattern="/user/*"
-					   access="hasAnyRole('ROLE_ADMIN','ROLE_MODERATOR')" />
-		<logout logout-success-url="/login" invalidate-session="false" logout-url="/logout"/>
+	<!--<intercept-url pattern="/admin/*"-->
+	<!--access="hasAnyRole('ROLE_ADMIN')" />-->
+	<!--<logout logout-success-url="/"/>-->
+
+	<!--<intercept-url pattern="/user/*"-->
+	<!--access="hasAnyRole('ROLE_ADMIN','ROLE_MODERATOR')" />-->
+	<!--<logout logout-success-url="/login" invalidate-session="false" logout-url="/logout"/>-->
+
+	<!--</http>-->
+
+	<http auto-config="true" >
+		<csrf disabled="true"/>
+	<intercept-url pattern="/**" access="hasAnyAuthority('ROLE_USER','ROLE_ADMIN','ROLE_MODERATOR','ROLE_GO')" />
+	<form-login login-processing-url="/login" />
+
+	<intercept-url pattern="/admin/*" access="hasAnyRole('ROLE_ADMIN','ROLE_GO')" />
+	<logout logout-success-url="/"/>
+
+	<intercept-url pattern="/user/*" access="hasAnyRole('ROLE_ADMIN','ROLE_MODERATOR','ROLE_GO')" />
+	<logout logout-success-url="/login" invalidate-session="false" logout-url="/logout"/>
 
 	</http>
 
+	<!--<authentication-manager>-->
+		<!--<authentication-provider>-->
+			<!--<password-encoder hash="sha"/>-->
+			<!--<user-service>-->
+				<!--<user name="user" password="0733824cc1549ce36139e8c790a9344d1e385cd2" authorities="ROLE_MODERATOR" />-->
+				<!--<user name="admin" password="0733824cc1549ce36139e8c790a9344d1e385cd2" authorities="ROLE_ADMIN" />-->
+			<!--</user-service>-->
+		<!--</authentication-provider>-->
+	<!--</authentication-manager>-->
+	<beans:bean id="webSecurityExpressionHandler" class="org.springframework.security.web.access.expression.DefaultWebSecurityExpressionHandler" />
 
 
-
-
-	<beans:import resource="servlet-context.xml" />
 
 	<authentication-manager>
 		<authentication-provider>
-			<password-encoder ref="encoder" />
-			<user-service>
-				<user name="admin"
-					password="$2a$12$cOqgJ6LE44ZmntyPTixH0OFi0/OUCW/6LB1R2quj3qluMvBFngS9u"
-					authorities="ROLE_ADMIN" />
-			</user-service>
+			<!--<password-encoder hash="sha"/>-->
+
+			<jdbc-user-service data-source-ref="dataSource" id="jdbcUserDetailsManager"
+							   users-by-username-query="select login,decrypt,1  from users where login=?"
+							   authorities-by-username-query=
+									   "select login, name from users where login=?"
+							   role-prefix="ROLE_"/>
+
 		</authentication-provider>
 	</authentication-manager>
+
+	<beans:import resource="servlet-context.xml" />
+
 
 </beans:beans>

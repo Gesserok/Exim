@@ -12,7 +12,7 @@
         <form:password path="decrypt" title="password"/>
         <form:button value="submit">Save</form:button>
     </form:form>
-    <a href="/list">Cancel</a>
+    <a href="/admin/user/list">Cancel</a>
 
 
 </t:layout>

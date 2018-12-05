@@ -13,7 +13,7 @@
         <%--<form:hidden path="id"/>--%>
         <form:button value="submit">Save</form:button>
     </form:form>
-    <span><a href="/list">Cancel</a></span>
+    <span><a href="/admin/user/list">Cancel</a></span>
     <span><a href="/delete?login=${updateUser.login}">Delete</a></span>
 
 </t:layout>

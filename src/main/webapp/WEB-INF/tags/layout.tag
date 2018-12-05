@@ -1,5 +1,9 @@
 <%@tag pageEncoding="UTF-8" description="Base layout" %>
 
+<%@ taglib uri="http://www.springframework.org/security/tags" prefix="security" %>
+
+
+
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@attribute name="title" type="java.lang.String" required="true"%>
 <!DOCTYPE html>
@@ -14,6 +18,32 @@
 </head>
 <body>
 
+<security:authorize access="hasRole('ROLE_GO')">
+<header class="navbar navbar-default">
+    <div class="container">
+        <ul class="nav navbar-nav navbar-left">
+            <li>
+                <a href="/user/user/list"><span class="glyphicon glyphicon-list-alt"></span>List of emails</a>
+            </li>
+            <li>
+                <a href="/user/user/create"><span class="glyphicon glyphicon-plus"></span>Add new email</a>
+            </li>
+            <li>
+                <a href="/user/aliase/list"><span class="glyphicon glyphicon-plus"></span>Aliases</a>
+            </li>
+            <li>
+                <a href="/user/aliase/create"><span class="glyphicon glyphicon-plus"></span>Add new aliase</a>
+            </li>
+            <%--<li>--%>
+            <%--<a href="register"><span class="glyphicon glyphicon-user"></span> Зарегистрироваться</a>--%>
+            <%--</li>--%>
+        </ul>
+    </div>
+</header>
+
+</security:authorize>
+
+<security:authorize access="hasRole('ROLE_ADMIN')">
 <header class="navbar navbar-default">
     <div class="container">
         <ul class="nav navbar-nav navbar-left">
@@ -30,7 +60,7 @@
                 <a href="/admin/aliase/create"><span class="glyphicon glyphicon-plus"></span>Add new aliase</a>
             </li>
             <%--<li>--%>
-                <%--<a href="register"><span class="glyphicon glyphicon-user"></span> Зарегистрироваться</a>--%>
+            <%--<a href="register"><span class="glyphicon glyphicon-user"></span> Зарегистрироваться</a>--%>
             <%--</li>--%>
         </ul>
     </div>
@@ -39,7 +69,7 @@
 <div class="container">
     <jsp:doBody/>
 </div>
-
+</security:authorize>
 <a href="<c:url value="/logout" />">Logout</a>
 
 <footer class="panel-footer">

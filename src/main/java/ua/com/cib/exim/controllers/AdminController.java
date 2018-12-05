@@ -2,34 +2,39 @@ package ua.com.cib.exim.controllers;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import ua.com.cib.exim.model.EximAliase;
 import ua.com.cib.exim.model.User;
 import ua.com.cib.exim.services.UserService;
 
+import java.util.Collection;
 import java.util.List;
 //import ua.com.cib.exim.service.UserService;
 
 
 @Controller
-public class MainController {
+public class AdminController {
 
     @Autowired
     private UserService service;
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
-    public String hello(ModelMap map) {
-        return "redirect:/admin/user/list";
-    }
+
+
 
     @RequestMapping(value = "/admin/user/list", method = RequestMethod.GET)
     public String list(ModelMap map) {
+        Collection<SimpleGrantedAuthority> authorities =
+                (Collection<SimpleGrantedAuthority>) SecurityContextHolder.getContext().getAuthentication().getAuthorities();
+
+        for (SimpleGrantedAuthority x : authorities) {
+
+            System.out.println("AUTHORITY = "  + x.getAuthority());
+        }
         List<User> list = service.list();
         map.addAttribute("list", service.list());
         return "list";

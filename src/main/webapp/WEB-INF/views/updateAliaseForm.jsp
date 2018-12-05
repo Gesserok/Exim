@@ -13,7 +13,7 @@
         <%--<form:hidden path="id"/>--%>
         <form:button value="submit">Save</form:button>
     </form:form>
-    <span><a href="/aliase/list">Cancel</a></span>
+    <span><a href="/admin/aliase/list">Cancel</a></span>
     <span><a href="/delete?localPart=${updateAliase.localPart}">Delete</a></span>
 
 </t:layout>

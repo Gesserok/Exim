@@ -144,7 +144,7 @@ public class User {
         return "User{" +
 //                "id=" + id +
                 ", login='" + login + '\'' +
-                ", password='" + password + '\'' +
+//                ", password='" + password + '\'' +
                 ", decrypt='" + decrypt + '\'' +
                 '}';
     }
@@ -156,12 +156,12 @@ public class User {
         User user = (User) o;
         return //getId() == user.getId() &&
                 Objects.equals(getLogin(), user.getLogin()) &&
-                Objects.equals(getPassword(), user.getPassword()) &&
+//                Objects.equals(getPassword(), user.getPassword()) &&
                 Objects.equals(getDecrypt(), user.getDecrypt());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(/*getId(),*/ getLogin(), getPassword(), getDecrypt());
+        return Objects.hash(/*getId(),*/ getLogin(), /*getPassword(),*/ getDecrypt());
     }
 }
