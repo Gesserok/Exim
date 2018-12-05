@@ -7,19 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b69998c8-0636-4a97-b76d-d6fbb0a48ffd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/empty.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/controllers/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/controllers/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/cib/exim/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/security-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/security-context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/layout.tag" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/layout.tag" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addAliaseForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addAliaseForm.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addForm.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/updateAliaseForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/updateAliaseForm.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/updateForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/updateForm.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -206,7 +194,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>save</find>
       <find>updateAliase</find>
       <find>newA</find>
       <find>service.get</find>
@@ -236,6 +223,7 @@
       <find>data</find>
       <find>spring-security-config</find>
       <find>username</find>
+      <find>AUTHORITY =</find>
     </findStrings>
     <replaceStrings>
       <replace>4.1.xsd</replace>
@@ -529,7 +517,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544025514269" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544039840155" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -752,12 +740,12 @@
       <workItem from="1543851416728" duration="11000" />
       <workItem from="1543851514983" duration="3617000" />
       <workItem from="1543855193180" duration="18000" />
-      <workItem from="1543923502824" duration="36600000" />
+      <workItem from="1543923502824" duration="37531000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="171874000" />
+    <option name="totallyTimeSpent" value="172805000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -770,9 +758,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49879518" visible="true" weight="0.2153518" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49879518" visible="true" weight="0.2153518" />
       <window_info id="Structure" order="1" sideWeight="0.50120485" side_tool="true" weight="0.20415778" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -782,7 +769,7 @@
       <window_info id="Web" order="7" side_tool="true" weight="0.32995737" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49733475" visible="true" weight="0.44420367" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49733475" weight="0.44420367" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946696" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -791,7 +778,7 @@
       <window_info anchor="bottom" id="Application Servers" order="8" weight="0.32936078" />
       <window_info anchor="bottom" id="Analysis" order="9" />
       <window_info anchor="bottom" id="Spring" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49840087" weight="0.22318527" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49840087" visible="true" weight="0.73131096" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5026652" side_tool="true" weight="0.17551462" />
       <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.49946696" weight="0.32936078" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" />
