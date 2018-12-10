@@ -6,15 +6,15 @@
 
 <t:layout title="Update user">
     <form:form id="updateForm" modelAttribute="updateUser" method="post" action="submitUpdate">
-        Enter Email address
+        Введіть email адресу
         <form:input path="login"/>
-        Enter Email password
+        Введіть пароль
         <form:password path="decrypt" title="password"/>
         <%--<form:hidden path="id"/>--%>
-        <form:button value="submit">Save</form:button>
+        <form:button value="submit">Зберегти</form:button>
     </form:form>
-    <span><a href="/admin/user/list">Cancel</a></span>
-    <span><a href="/delete?login=${updateUser.login}">Delete</a></span>
+    <span><a href="/exim/admin/user/list">Відмінити</a></span>
+    <span><a href="/delete?login=${updateUser.login}">Видалити</a></span>
 
 </t:layout>
 

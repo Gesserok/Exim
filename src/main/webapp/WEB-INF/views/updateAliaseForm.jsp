@@ -6,15 +6,15 @@
 
 <t:layout title="Update Aliase">
     <form:form id="updateAliaseForm" modelAttribute="updateAliase" method="post" action="submitUpdate">
-        Enter Aliase Name
+        Введіть адресу групової скриньки
         <form:input path="localPart"/>
-        Enter recipients line
+        ВВедіть отримувачів
         <form:input path="recipients"/>
         <%--<form:hidden path="id"/>--%>
-        <form:button value="submit">Save</form:button>
+        <form:button value="submit">Зберегти</form:button>
     </form:form>
-    <span><a href="/admin/aliase/list">Cancel</a></span>
-    <span><a href="/delete?localPart=${updateAliase.localPart}">Delete</a></span>
+    <span><a href="/exim/admin/aliase/list">Відмінити</a></span>
+    <span><a href="/delete?localPart=${updateAliase.localPart}">Видалити</a></span>
 
 </t:layout>
 

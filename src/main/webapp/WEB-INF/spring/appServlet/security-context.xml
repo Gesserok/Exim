@@ -61,7 +61,21 @@
 									   "select login, name from users where login=?"
 							   role-prefix="ROLE_"/>
 
+
+
 		</authentication-provider>
+
+		<authentication-provider>
+
+			<password-encoder hash="sha"/>
+			<user-service>
+			<user name="admin1" password="0733824cc1549ce36139e8c790a9344d1e385cd2" authorities="ROLE_ADMIN" />
+			<user name="admin2" password="0733824cc1549ce36139e8c790a9344d1e385cd2" authorities="ROLE_ADMIN" />
+			<user name="admin3" password="0733824cc1549ce36139e8c790a9344d1e385cd2" authorities="ROLE_ADMIN" />
+		</user-service>
+		</authentication-provider>
+
+
 	</authentication-manager>
 
 	<beans:import resource="servlet-context.xml" />

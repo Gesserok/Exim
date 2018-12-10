@@ -112,9 +112,9 @@
             });
         </script>
 
-        <form id="authorization_website" action="https://cib.com.ua" method="POST">
+        <form id="authorization_website" action="localhost" method="POST">
             <input type="hidden" name="auth_token" value=""/>
-            <input type="hidden" name="redirect_url" value="https://cib.com.ua"/>
+            <input type="hidden" name="redirect_url" value="localhost"/>
         </form>
 
         <header class="fixed-header">

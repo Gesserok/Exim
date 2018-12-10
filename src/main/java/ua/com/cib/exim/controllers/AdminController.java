@@ -2,6 +2,7 @@ package ua.com.cib.exim.controllers;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
@@ -28,13 +29,9 @@ public class AdminController {
 
     @RequestMapping(value = "/admin/user/list", method = RequestMethod.GET)
     public String list(ModelMap map) {
-        Collection<SimpleGrantedAuthority> authorities =
-                (Collection<SimpleGrantedAuthority>) SecurityContextHolder.getContext().getAuthentication().getAuthorities();
 
-        for (SimpleGrantedAuthority x : authorities) {
+        if (!hasRole("ROLE_ADMIN")) return "403";
 
-            System.out.println("AUTHORITY = "  + x.getAuthority());
-        }
         List<User> list = service.list();
         map.addAttribute("list", service.list());
         return "list";
@@ -42,6 +39,9 @@ public class AdminController {
 
     @RequestMapping (value = "/admin/user/create", method = RequestMethod.GET)
     public ModelAndView createNewForm() {
+
+        if (!hasRole("ROLE_ADMIN")) return new ModelAndView("redirect:/403");
+
         ModelAndView modelAndView = new ModelAndView("addForm");
         modelAndView.getModelMap().addAttribute("newUser", new User());
         return modelAndView;
@@ -49,6 +49,9 @@ public class AdminController {
 
     @RequestMapping (value = "/admin/user/update", method = RequestMethod.GET)
     public ModelAndView updateUser(@RequestParam String login) {
+
+        if (!hasRole("ROLE_ADMIN")) return new ModelAndView("redirect:/403");
+
         ModelAndView modelAndView = new ModelAndView("updateForm");
         modelAndView.getModelMap().addAttribute("updateUser", service.get(login));
         return modelAndView;
@@ -56,18 +59,27 @@ public class AdminController {
 
     @RequestMapping (value = "/admin/user/submitNew", method = RequestMethod.POST)
     public ModelAndView createUser(@ModelAttribute User newUser) {
+
+        if (!hasRole("ROLE_ADMIN")) return new ModelAndView("redirect:/403");
+
         service.add(newUser);
         return new ModelAndView("redirect:list");
     }
 
     @RequestMapping (value = "/admin/user/submitUpdate", method = RequestMethod.POST)
     public ModelAndView updateUser(@ModelAttribute User updateUser) {
+
+        if (!hasRole("ROLE_ADMIN")) return new ModelAndView("redirect:/403");
+
         service.update(updateUser);
         return new ModelAndView("redirect:list");
     }
 
     @RequestMapping (value = "/admin/user/delete", method = RequestMethod.GET)
     public ModelAndView deleteUser(@RequestParam String login) {
+
+        if (!hasRole("ROLE_ADMIN")) return new ModelAndView("redirect:/403");
+
         service.delete(login);
         return new ModelAndView("redirect:list");
     }
@@ -77,5 +89,11 @@ public class AdminController {
 //        return "/assets/js/bootstrap.min.js";
 //    }
 
+    private boolean hasRole(String role) {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+
+        return authentication.getAuthorities().stream()
+                .anyMatch(r -> r.getAuthority().equals(role));
+    }
 
 }

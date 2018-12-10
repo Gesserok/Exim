@@ -13,4 +13,6 @@ public interface EximAliasesDao {
     String delete(String login);
     EximAliase get(String login);
     List<EximAliase> list();
+
+    List<EximAliase> list(User currentUser);
 }

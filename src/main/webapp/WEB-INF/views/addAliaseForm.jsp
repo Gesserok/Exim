@@ -6,15 +6,15 @@
 
 <t:layout title="New aliase">
     <form:form id="addAliaseForm" modelAttribute="newAliase" method="post" action="submitNew">
-        Enter Aliase Name
+        Введіть адресу групової розсилки (без @cib.com.ua)
         <form:input path="localPart"/>
-        Enter recipients line
+        Введіть отримувачів через "," (без @cib.com.ua)
         <form:input path="recipients"/>
         <%--Enter Email password--%>
         <%--<form:password path="decrypt" title="password"/>--%>
         <form:button value="submit">Save</form:button>
     </form:form>
-    <a href="/admin/aliase/list">Cancel</a>
+    <a href="/exim/admin/aliase/list">Cancel</a>
 
 
 </t:layout>

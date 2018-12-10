@@ -5,14 +5,15 @@
 
 <t:layout title="Aliases">
 
-    <h1 class="text-center text-uppercase">Aliases:</h1>
+    <h1 class="text-center text-uppercase">Групові поштові адреси:</h1>
     <div class="jumbotron">
         <table border="2px">
             <tr>
                     <%--<th>Id</th>--%>
-                <th> Local_part </th>
-                <th> domain </th>
-                <th> recipients </th>
+                <th> Групова пошта </th>
+                <th> Домен </th>
+                <th> Отримувачі </th>
+                <th> Дії </th>
 
             </tr>
             <c:forEach items="${aliase}" var="item">
@@ -24,8 +25,8 @@
                     <td><c:out value="${item.recipients}"/></td>
 
                     <td>
-                        <span><a href="update?localPart=${item.localPart}">edit</a></span>
-                        <span><a href="delete?localPart=${item.localPart}">delete</a></span>
+                        <span><a href="update?localPart=${item.localPart}">Редагувати</a></span>
+                        <span><a href="delete?localPart=${item.localPart}">Видалити</a></span>
                     </td>
                         <%--<td><c:out value="${item.domain}"/></td>--%>
                 </tr>

@@ -18,7 +18,7 @@ public class User {
     private String name;
 
 
-    @ColumnTransformer(write = "SHA2(?, 224)")
+    @ColumnTransformer(write = "encrypt(?)")
     @Column (name = "password", nullable = false, columnDefinition="VARCHAR(64)")
     private String password;
 

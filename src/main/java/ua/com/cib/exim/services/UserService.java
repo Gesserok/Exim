@@ -12,5 +12,4 @@ public interface UserService {
     String delete(String login);
     User get(String login);
     List<User> list();
-
 }

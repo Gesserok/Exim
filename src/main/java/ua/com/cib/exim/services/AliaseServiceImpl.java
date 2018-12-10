@@ -3,6 +3,7 @@ package ua.com.cib.exim.services;
 import org.springframework.beans.factory.annotation.Autowired;
 import ua.com.cib.exim.dao.EximAliasesDao;
 import ua.com.cib.exim.model.EximAliase;
+import ua.com.cib.exim.model.User;
 
 import java.util.List;
 
@@ -21,6 +22,11 @@ public class AliaseServiceImpl implements AliaseService{
 
     public String delete(String eximAliase)  {
         return String.valueOf(dao.delete(eximAliase));
+    }
+
+    @Override
+    public List<EximAliase> listOfAliase(User currentUser) {
+        return dao.list(currentUser);
     }
 
     public EximAliase get(String eximAliase) {

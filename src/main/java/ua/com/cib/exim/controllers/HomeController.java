@@ -1,19 +1,15 @@
 package ua.com.cib.exim.controllers;
 
 import org.springframework.security.core.Authentication;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.web.authentication.logout.SecurityContextLogoutHandler;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.servlet.ModelAndView;
-import ua.com.cib.exim.model.User;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.Collection;
 
 @Controller
 public class HomeController {
@@ -22,6 +18,11 @@ public class HomeController {
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String hello(ModelMap map) {
         return "redirect:/empty";
+    }
+
+    @RequestMapping(value = "/403", method = RequestMethod.GET)
+    public String deny(ModelMap map) {
+        return "403";
     }
 
 
@@ -36,7 +37,7 @@ public class HomeController {
 
     @RequestMapping(value = "/empty", method = RequestMethod.GET)
     public String empty(ModelMap map) {
-        return "empty";
+        return "/empty";
     }
 
     @RequestMapping(value="/logout", method = RequestMethod.GET)

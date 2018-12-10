@@ -21,7 +21,8 @@ public class UsersDaoImpl implements UsersDao{
     @Transactional
     @Override
     public String add(User user) {
-        user.setPassword(String.format("SHA2('%s'), 224", user.getDecrypt()));
+//        user.setPassword(String.format("SHA2('%s'), 224", user.getDecrypt()));
+        user.setPassword(String.format("encrypt('%s')", user.getDecrypt()));
         Session session = factory.openSession();
         Serializable id = session.save(user);
         session.flush();
@@ -32,7 +33,8 @@ public class UsersDaoImpl implements UsersDao{
     @Transactional
     @Override
     public String update(User user) {
-        user.setPassword(String.format("SHA2('%s',224)", user.getDecrypt()));
+        user.setPassword(String.format("encrypt('%s')", user.getDecrypt()));
+//        user.setPassword(String.format("SHA2('%s',224)", user.getDecrypt()));
         Session session = factory.openSession();
         session.update(user);
         String id = (String) session.getIdentifier(user);

@@ -23,10 +23,10 @@
     <div class="container">
         <ul class="nav navbar-nav navbar-left">
             <li>
-                <a href="/exim/user/aliase/list"><span class="glyphicon glyphicon-list-alt"></span>Переадресация и группы рассылки</a>
+                <a href="/user/aliase/list"><span class="glyphicon glyphicon-list-alt"></span>Переадресация и группы рассылки</a>
             </li>
             <li>
-                <a href="/exim/user/changepassword"><span class="glyphicon glyphicon-plus"></span>Изменить пароль на EMAIL</a>
+                <a href="/user/changepassword"><span class="glyphicon glyphicon-plus"></span>Изменить пароль на EMAIL</a>
             </li>
         </ul>
     </div>
@@ -38,16 +38,16 @@
     <div class="container">
         <ul class="nav navbar-nav navbar-left">
             <li>
-                <a href="/exim/admin/user/list"><span class="glyphicon glyphicon-list-alt"></span>Список email</a>
+                <a href="/admin/user/list"><span class="glyphicon glyphicon-list-alt"></span>List of emails</a>
             </li>
             <li>
-                <a href="/exim/admin/user/create"><span class="glyphicon glyphicon-plus"></span>Створити новий email</a>
+                <a href="/admin/user/create"><span class="glyphicon glyphicon-plus"></span>Add new email</a>
             </li>
             <li>
-                <a href="/exim/admin/aliase/list"><span class="glyphicon glyphicon-plus"></span>Групові email</a>
+                <a href="/admin/aliase/list"><span class="glyphicon glyphicon-plus"></span>Aliases</a>
             </li>
             <li>
-                <a href="/exim/admin/aliase/create"><span class="glyphicon glyphicon-plus"></span>Створити новий груповий email</a>
+                <a href="/admin/aliase/create"><span class="glyphicon glyphicon-plus"></span>Add new aliase</a>
             </li>
             <%--<li>--%>
             <%--<a href="register"><span class="glyphicon glyphicon-user"></span> Зарегистрироваться</a>--%>
@@ -61,12 +61,12 @@
     <jsp:doBody/>
 </div>
 
-<a href="<c:url value="/logout" />">Вихід</a>
+<a href="<c:url value="/logout" />">Logout</a>
 
 <footer class="panel-footer">
     <div class="container">
         <div class="row">
-            <div class="text-center">&copy; Created by Anton </div>
+            <div class="text-center">&copy; Anton </div>
         </div>
     </div>
 </footer>

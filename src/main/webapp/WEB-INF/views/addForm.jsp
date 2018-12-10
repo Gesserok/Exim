@@ -6,13 +6,13 @@
 
 <t:layout title="New user">
     <form:form id="addForm" modelAttribute="newUser" method="post" action="submitNew">
-        Enter Email address
+        Введіть email (без @cib.com.ua)
         <form:input path="login"/>
-        Enter Email password
+        Введыть пароль
         <form:password path="decrypt" title="password"/>
-        <form:button value="submit">Save</form:button>
+        <form:button value="submit">Зберегти</form:button>
     </form:form>
-    <a href="/admin/user/list">Cancel</a>
+    <a href="/exim/admin/user/list">Відмінити</a>
 
 
 </t:layout>

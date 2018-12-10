@@ -5,22 +5,22 @@
 
 <t:layout title="List of emails">
 
-    <h1 class="text-center text-uppercase">Emails:</h1>
+    <h1 class="text-center text-uppercase">Поштові скриньки:</h1>
     <div class="jumbotron">
         <table border="2px">
             <tr>
                     <%--<th>Id</th>--%>
-                <th> Login </th>
-                <th> Name </th>
-                <th> Password </th>
-                <th> Decrypt </th>
+                <th> Логін </th>
+                <th> ГО </th>
+                <th> Шифр  </th>
+                <th> Пароль </th>
                 <th> uid </th>
                 <th> gid </th>
-                <th> Domain </th>
+                <th> Домен </th>
                 <th> quota </th>
                 <th> copy_mail </th>
                 <th> Status </th>
-                <th> Operation</th>
+                <th> Дії </th>
             </tr>
             <c:forEach items="${list}" var="item">
                 <tr>
@@ -37,8 +37,8 @@
                     <td><c:out value="${item.copyMail}"/></td>
                     <td><c:out value="${item.status}"/></td>
                     <td>
-                        <span><a href="update?login=${item.login}">edit</a></span>
-                        <span><a href="delete?login=${item.login}">delete</a></span>
+                        <span><a href="update?login=${item.login}">Редарувати</a></span>
+                        <span><a href="delete?login=${item.login}">Видалити</a></span>
                     </td>
                         <%--<td><c:out value="${item.domain}"/></td>--%>
                 </tr>

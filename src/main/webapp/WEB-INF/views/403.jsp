@@ -3,6 +3,8 @@
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@ taglib prefix="t" tagdir="/WEB-INF/tags" %>
 
-<t:layout title="empty">
+<t:layout title="403">
+
+    <h1 class="text-center text-uppercase">FORBIDDEN DENY</h1>
 
 </t:layout>
