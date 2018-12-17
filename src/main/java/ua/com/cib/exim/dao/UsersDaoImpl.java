@@ -3,11 +3,16 @@ package ua.com.cib.exim.dao;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DuplicateKeyException;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.servlet.ModelAndView;
+import ua.com.cib.exim.exception.DuplicateEntityException;
+import ua.com.cib.exim.exception.DuplicateUserException;
 import ua.com.cib.exim.model.User;
 import ua.com.cib.exim.utils.Utils;
 
+import javax.persistence.EntityNotFoundException;
 import java.io.Serializable;
 import java.util.List;
 
@@ -20,7 +25,9 @@ public class UsersDaoImpl implements UsersDao{
 
     @Transactional
     @Override
-    public String add(User user) {
+    public String add(User user) throws DuplicateUserException {
+        User checkUser = get(user.getLogin());
+        if (checkUser != null) throw new DuplicateUserException();
 //        user.setPassword(String.format("SHA2('%s'), 224", user.getDecrypt()));
         user.setPassword(String.format("encrypt('%s')", user.getDecrypt()));
         Session session = factory.openSession();

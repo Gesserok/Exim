@@ -57,6 +57,29 @@
 </header>
 </security:authorize>
 
+<security:authorize access="hasRole('ROLE_MODERATOR')">
+    <header class="navbar navbar-default">
+        <div class="container">
+            <ul class="nav navbar-nav navbar-left">
+                <li>
+                    <a href="/exim/admin/user/create"><span class="glyphicon glyphicon-plus"></span>Створити новий email</a>
+                </li>
+                <li>
+                    <a href="/exim/admin/aliase/create"><span class="glyphicon glyphicon-plus"></span>Створити новий груповий email</a>
+                </li>
+                <li>
+                    <a href="/exim/admin/aliase/deleteone"><span class="glyphicon glyphicon-plus"></span>Видалити груповий email</a>
+                </li>
+                    <%--<li>--%>
+                    <%--<a href="register"><span class="glyphicon glyphicon-user"></span> Зарегистрироваться</a>--%>
+                    <%--</li>--%>
+            </ul>
+        </div>
+    </header>
+</security:authorize>
+
+
+
 <div class="container">
     <jsp:doBody/>
 </div>

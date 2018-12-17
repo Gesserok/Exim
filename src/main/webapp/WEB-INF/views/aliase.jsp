@@ -10,24 +10,26 @@
         <table border="2px">
             <tr>
                     <%--<th>Id</th>--%>
+                <th> Дії </th>
                 <th> Групова пошта </th>
                 <th> Домен </th>
                 <th> Отримувачі </th>
-                <th> Дії </th>
+
 
             </tr>
             <c:forEach items="${aliase}" var="item">
                 <tr>
+                    <td>
+                        <span><a href="update?localPart=${item.localPart}">Редагувати</a></span>
+                        <%--<span><a href="delete?localPart=${item.localPart}">Видалити</a></span>--%>
+                    </td>
                         <%--<td><c:out value="${item.id}"/></td>--%>
                     <td><c:out value="${item.localPart}"/></td>
                     <td><c:out value="${item.domain}"/></td>
                         <%--<td><c:out value="${item.name}"/></td>--%>
                     <td><c:out value="${item.recipients}"/></td>
 
-                    <td>
-                        <span><a href="update?localPart=${item.localPart}">Редагувати</a></span>
-                        <span><a href="delete?localPart=${item.localPart}">Видалити</a></span>
-                    </td>
+
                         <%--<td><c:out value="${item.domain}"/></td>--%>
                 </tr>
             </c:forEach>

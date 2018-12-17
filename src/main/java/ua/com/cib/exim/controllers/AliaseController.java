@@ -32,17 +32,37 @@ public class AliaseController {
     @RequestMapping (value = "/admin/aliase/create", method = RequestMethod.GET)
     public ModelAndView createNewAliaseForm() {
 
-        if (!hasRole("ROLE_ADMIN")) return new ModelAndView("redirect:/403");
+        if (!hasRole("ROLE_ADMIN") && !hasRole("ROLE_MODERATOR")) return new ModelAndView("redirect:/403");
 
         ModelAndView modelAndView = new ModelAndView("addAliaseForm");
         modelAndView.getModelMap().addAttribute("newAliase", new EximAliase());
         return modelAndView;
     }
 
+    @RequestMapping (value = "/admin/aliase/deleteone", method = RequestMethod.GET)
+    public ModelAndView deleteOneAliaseForm() {
+
+        if (!hasRole("ROLE_ADMIN") && !hasRole("ROLE_MODERATOR")) return new ModelAndView("redirect:/403");
+
+        ModelAndView modelAndView = new ModelAndView("deleteAliaseForm");
+        modelAndView.getModelMap().addAttribute("deleteAliase", new EximAliase());
+        return modelAndView;
+    }
+
+    @RequestMapping (value = "/admin/aliase/submitDelete", method = RequestMethod.POST)
+    public ModelAndView submitDeleteAliase(@ModelAttribute EximAliase newAliase) {
+
+        if (!hasRole("ROLE_ADMIN") && !hasRole("ROLE_MODERATOR")) return new ModelAndView("redirect:/403");
+
+        service.delete(newAliase.getLocalPart());
+        return new ModelAndView("redirect:/admin/aliase/list");
+    }
+
+
     @RequestMapping (value = "/admin/aliase/update", method = RequestMethod.GET)
     public ModelAndView updateAliase(@RequestParam String localPart) {
 
-        if (!hasRole("ROLE_ADMIN")) return new ModelAndView("redirect:/403");
+        if (!hasRole("ROLE_ADMIN") && !hasRole("ROLE_MODERATOR")) return new ModelAndView("redirect:/403");
 
         ModelAndView modelAndView = new ModelAndView("updateAliaseForm");
         modelAndView.getModelMap().addAttribute("updateAliase", service.get(localPart));
@@ -52,7 +72,7 @@ public class AliaseController {
     @RequestMapping (value = "/admin/aliase/submitNew", method = RequestMethod.POST)
     public ModelAndView createAliase(@ModelAttribute EximAliase newAliase) {
 
-        if (!hasRole("ROLE_ADMIN")) return new ModelAndView("redirect:/403");
+        if (!hasRole("ROLE_ADMIN") && !hasRole("ROLE_MODERATOR")) return new ModelAndView("redirect:/403");
 
         service.add(newAliase);
         return new ModelAndView("redirect:/admin/aliase/list");
@@ -61,7 +81,7 @@ public class AliaseController {
     @RequestMapping (value = "/admin/aliase/submitUpdate", method = RequestMethod.POST)
     public ModelAndView updateAliase(@ModelAttribute EximAliase updateAliase) {
 
-        if (!hasRole("ROLE_ADMIN")) return new ModelAndView("redirect:/403");
+        if (!hasRole("ROLE_ADMIN") && !hasRole("ROLE_MODERATOR")) return new ModelAndView("redirect:/403");
 
         service.update(updateAliase);
         return new ModelAndView("redirect:/admin/aliase/list");
@@ -70,7 +90,7 @@ public class AliaseController {
     @RequestMapping (value = "/admin/aliase/delete" , method = RequestMethod.GET)
     public ModelAndView deleteAliase(@RequestParam String localPart){
 
-        if (!hasRole("ROLE_ADMIN")) return new ModelAndView("redirect:/403");
+        if (!hasRole("ROLE_ADMIN") && !hasRole("ROLE_MODERATOR")) return new ModelAndView("redirect:/403");
 
         service.delete(localPart);
         return new ModelAndView("redirect:/admin/aliase/list");

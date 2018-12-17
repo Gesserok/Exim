@@ -49,6 +49,9 @@ public class HomeController {
         return "redirect:/login?logout";//You can redirect wherever you want, but generally it's a good practice to show login screen again.
     }
 
+
+
+
 //	@RequestMapping(value = "/", method = RequestMethod.GET)
 //	public String home() {
 //		return "list";

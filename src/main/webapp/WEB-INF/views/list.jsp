@@ -38,7 +38,7 @@
                     <td><c:out value="${item.status}"/></td>
                     <td>
                         <span><a href="update?login=${item.login}">Редарувати</a></span>
-                        <span><a href="delete?login=${item.login}">Видалити</a></span>
+                        <%--<span><a href="delete?login=${item.login}">Видалити</a></span>--%>
                     </td>
                         <%--<td><c:out value="${item.domain}"/></td>--%>
                 </tr>

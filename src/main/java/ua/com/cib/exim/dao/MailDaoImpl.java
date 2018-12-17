@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.transaction.annotation.Transactional;
+import ua.com.cib.exim.exception.DuplicateUserException;
 import ua.com.cib.exim.model.EximAliase;
 import ua.com.cib.exim.model.MailCopy;
 import ua.com.cib.exim.model.User;
@@ -25,7 +26,7 @@ public class MailDaoImpl implements MailDao {
 
     @Transactional
     @Override
-    public String add(User user) {
+    public String add(User user) throws DuplicateUserException {
         String id = usersDao.add(user);
         userForwardsDao.add(user);
         mailCopysDao.add(user);

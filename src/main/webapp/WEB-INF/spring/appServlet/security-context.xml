@@ -30,10 +30,10 @@
 	<intercept-url pattern="/**" access="hasAnyAuthority('ROLE_USER','ROLE_ADMIN','ROLE_MODERATOR','ROLE_GO')" />
 	<form-login login-processing-url="/login" />
 
-	<intercept-url pattern="/admin/*" access="hasAnyRole('ROLE_ADMIN','ROLE_GO')" />
+	<intercept-url pattern="/admin/*" access="hasAnyAuthority('ROLE_ADMIN','ROLE_MODERATOR')" />
 	<logout logout-success-url="/"/>
 
-	<intercept-url pattern="/user/*" access="hasAnyRole('ROLE_ADMIN','ROLE_MODERATOR','ROLE_GO')" />
+	<intercept-url pattern="/user/*" access="hasAnyAuthority('ROLE_ADMIN','ROLE_MODERATOR','ROLE_GO')" />
 	<logout logout-success-url="/login" invalidate-session="false" logout-url="/logout"/>
 
 	</http>
@@ -60,18 +60,14 @@
 							   authorities-by-username-query=
 									   "select login, name from users where login=?"
 							   role-prefix="ROLE_"/>
-
-
-
 		</authentication-provider>
 
 		<authentication-provider>
-
-			<password-encoder hash="sha"/>
+			<password-encoder ref="encoder"/>
 			<user-service>
-			<user name="admin1" password="0733824cc1549ce36139e8c790a9344d1e385cd2" authorities="ROLE_ADMIN" />
-			<user name="admin2" password="0733824cc1549ce36139e8c790a9344d1e385cd2" authorities="ROLE_ADMIN" />
-			<user name="admin3" password="0733824cc1549ce36139e8c790a9344d1e385cd2" authorities="ROLE_ADMIN" />
+			<user name="admin" password="$2a$12$ZFvJwc1.mjY28Ly5dbhddeK6mfAxoxDXldmldL/tdLHiaJQyl596." authorities="ROLE_ADMIN" />
+			<user name="moderator" password="$2a$12$.4QpRJVNYAtupoR9.7toJua4WDT1Dhd0J/3wG5iGh95yfJKY9vGUq" authorities="ROLE_ADMIN" />
+
 		</user-service>
 		</authentication-provider>
 

@@ -3,6 +3,7 @@ package ua.com.cib.exim.services;
 import org.springframework.beans.factory.annotation.Autowired;
 import ua.com.cib.exim.dao.EximAliasesDao;
 import ua.com.cib.exim.dao.MailDao;
+import ua.com.cib.exim.exception.DuplicateUserException;
 import ua.com.cib.exim.model.User;
 
 import java.util.List;
@@ -11,11 +12,12 @@ public class UserServiceImpl implements UserService{
 
     @Autowired
     private MailDao dao;
-    private EximAliasesDao aliaseDao;
+//    @Autowired
+//    private EximAliasesDao aliaseDao;
 
 
     @Override
-    public String add(User user) {
+    public String add(User user) throws DuplicateUserException {
         return dao.add(user);
     }
 

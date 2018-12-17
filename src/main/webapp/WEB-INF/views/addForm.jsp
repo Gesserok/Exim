@@ -6,11 +6,9 @@
 
 <t:layout title="New user">
     <form:form id="addForm" modelAttribute="newUser" method="post" action="submitNew">
-        Введіть email (без @cib.com.ua)
-        <form:input path="login"/>
-        Введыть пароль
-        <form:password path="decrypt" title="password"/>
-        <form:button value="submit">Зберегти</form:button>
+        <p><span> Введіть email: <form:input path="login"/>  @cib.com.ua </span></p>
+        <p><span> Введіть пароль <form:password path="decrypt" title="password"/> </span>
+        <span> <form:button value="submit">Зберегти</form:button> </span></p>
     </form:form>
     <a href="/exim/admin/user/list">Відмінити</a>
 

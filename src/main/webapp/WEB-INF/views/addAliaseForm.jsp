@@ -6,13 +6,13 @@
 
 <t:layout title="New aliase">
     <form:form id="addAliaseForm" modelAttribute="newAliase" method="post" action="submitNew">
-        Введіть адресу групової розсилки (без @cib.com.ua)
-        <form:input path="localPart"/>
-        Введіть отримувачів через "," (без @cib.com.ua)
-        <form:input path="recipients"/>
+        <p><span>Введіть адресу групової розсилки
+            <form:input path="localPart"/>  @cib.com.ua </span> </p>
+        <p><span>Введіть отримувачів через "," (без @cib.com.ua)
+        <form:textarea path="recipients"/>
         <%--Enter Email password--%>
         <%--<form:password path="decrypt" title="password"/>--%>
-        <form:button value="submit">Save</form:button>
+            <form:button value="submit">Save</form:button></span> </p>
     </form:form>
     <a href="/exim/admin/aliase/list">Cancel</a>
 
